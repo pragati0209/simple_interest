@@ -1,11 +1,15 @@
-import sys
-simple_interest_info("principal,rate,time")
-       input=("Principal",p);
-       input=("Rate",r);
-       input=("Time",t);
+def simple_interest(principal, rate, time):
+    si = (principal * rate * time) / 100
+    return si
+def main():
+    principal = 500000
+    rate = 2    
+    time = 2     
+    print("Principal:", principal)
+    print("Rate:", rate)
+    print("Time:", time)
+    result = simple_interest(principal, rate, time)
+    print("Simple Interest:", result)
 
-_ _"int"_ _=_ _"main"_ 
-       print("Principal",500000)
-       print("Rate",2000)
-       print("Time",2 year)
-assert_info="expected output"(principal,rate,time);
+if __name__ == "__main__":
+    main()
